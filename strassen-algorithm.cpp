@@ -165,3 +165,9 @@ void strassen (vector< vector<int> > &A, vector< vector<int> > &B, vector< vecto
     join(C21, C, new_d, 0, new_d);
     join(C22, C, new_d, new_d, new_d);
 }
+
+/*
+    Código modificado para Strassen puro, desde la fuente
+    Rangelak. (s.f.). Strassen-Matrix-Multiplication/strassen.cpp at master | rangelak/Strassen-Matrix-Multiplication. GitHub. 
+    https://github.com/rangelak/Strassen-Matrix-Multiplication/blob/master/strassen.cpp
+*/
