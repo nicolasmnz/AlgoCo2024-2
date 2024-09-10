@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-void merge(int arr[], int p, int q, int r) {
+void merge(vector<int>& arr, int p, int q, int r) {
     int n1 = q - p + 1;
     int n2 = r - q;
     
@@ -19,11 +20,11 @@ void merge(int arr[], int p, int q, int r) {
     
     while (i < n1 && j < n2) {
         if (L[i] <= M[j]) {
-        arr[k] = L[i];
-        i++;
+            arr[k] = L[i];
+            i++;
         } else {
-        arr[k] = M[j];
-        j++;
+            arr[k] = M[j];
+            j++;
         }
         k++;
     }
@@ -40,7 +41,7 @@ void merge(int arr[], int p, int q, int r) {
         k++;
     }
 }
-void mergeSort(int arr[], int l, int r) {
+void mergeSort(vector<int>& arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         
@@ -52,7 +53,7 @@ void mergeSort(int arr[], int l, int r) {
 }
 
 /*
-Código extraído de:
+Código modificado para la implementación de arreglos con libreria <vector>, desde la fuente:
     Merge Sort (With Code in Python/C++/Java/C). (s. f.). 
     https://www.programiz.com/dsa/merge-sort
 */
