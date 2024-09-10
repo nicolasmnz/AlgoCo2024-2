@@ -51,4 +51,8 @@ void merge(int arr[], int p, int q, int r) {
     }
 }
 
-//Código extraído de (Merge Sort (With Code In Python/C++/Java/C), s.f.)
+/*
+Código extraído de:
+    Merge Sort (With Code in Python/C++/Java/C). (s. f.). 
+    https://www.programiz.com/dsa/merge-sort
+*/

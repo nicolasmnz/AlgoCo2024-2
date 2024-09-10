@@ -30,4 +30,8 @@ void quickSort(int array[], int low, int high) {
     }
 }
 
-//Código extraído de (QuickSort (With Code In Python/C++/Java/C), s.f.)
+/*
+Código extraído de:
+    QuickSort (With Code in Python/C++/Java/C). (s. f.). 
+    https://www.programiz.com/dsa/quick-sort
+*/

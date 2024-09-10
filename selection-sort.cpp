@@ -19,4 +19,8 @@ void selectionSort(int array[], int size) {
     }
 }
 
-//Código extraído de (Selection Sort (With Code In Python/C++/Java/C), s.f.)
+/*
+Código extraído de:
+    Selection Sort (With Code in Python/C++/Java/C). (s. f.). 
+    https://www.programiz.com/dsa/selection-sort
+*/
