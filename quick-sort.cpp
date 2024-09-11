@@ -1,15 +1,12 @@
-#include <iostream>
-#include <vector>
+#include "quick-sort.hpp"
 
-using namespace std;
-
-void swap(int& a, int& b) {
+void swap (int& a, int& b) {
     int t = a;
     a = b;
     b = t;
 }
 
-int medianOfThree(vector<int>& arr, int low, int high) {
+int medianOfThree (vector<int>& arr, int low, int high) {
     int mid = low + (high - low) / 2;
     
     // Ordenar los tres elementos para encontrar la mediana
@@ -20,7 +17,7 @@ int medianOfThree(vector<int>& arr, int low, int high) {
     return arr[mid];
 }
 
-int partition(vector<int>& array, int low, int high) {
+int partition (vector<int>& array, int low, int high) {
 
     int pivot = medianOfThree(array, low, high);
     int i = (low - 1);
@@ -37,7 +34,7 @@ int partition(vector<int>& array, int low, int high) {
     return (i + 1);
 }
 
-void quickSort(vector<int>& array, int low, int high) {
+void quickSort (vector<int>& array, int low, int high) {
     if (low < high) {
         int pi = partition(array, low, high);
         quickSort(array, low, pi - 1);

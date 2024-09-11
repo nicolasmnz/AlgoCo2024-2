@@ -1,9 +1,6 @@
-#include <iostream>
-#include <vector>
+#include "merge-sort.hpp"
 
-using namespace std;
-
-void merge(vector<int>& arr, int p, int q, int r) {
+void merge (vector<int>& arr, int p, int q, int r) {
     int n1 = q - p + 1;
     int n2 = r - q;
     
@@ -41,7 +38,7 @@ void merge(vector<int>& arr, int p, int q, int r) {
         k++;
     }
 }
-void mergeSort(vector<int>& arr, int l, int r) {
+void mergeSort (vector<int>& arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         

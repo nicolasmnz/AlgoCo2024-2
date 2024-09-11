@@ -1,11 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include "selection-sort.hpp"
 
-using namespace std;
-
-
-void selectionSort(vector<int>& array) {
+void selectionSort (vector<int>& array) {
     int size = array.size();
 
     for (int i = 0; i < size - 1; i++) {
